@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>REM</title>
+  <link rel="stylesheet" href="./styles.css">
+  <link href="../favicon.png" rel="shortcut icon" type="image/x-icon" />
+  <script src="jquery-3.5.1.min.js"></script>
+  <script>
+    function loadIframe(url) {
+      $("#graph-frame").attr('src',url);
+      return false;
+    }
+  </script>
+</head>
+<body>
+
+<ul>
+  <li><a href="../index.html">Home Page</a></li>
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Popularity</a>
+    <div class="dropdown-content">
+      <a href="../demo_graphs/wekan-wekan-master_popularity_full.html" onclick="return loadIframe(this.href);">Full REM Graph</a>
+      <a href="../demo_graphs/wekan-wekan-master_popularity_min.html" onclick="return loadIframe(this.href);">Filtered REM Graph</a>
+    </div>
+  </li>
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Quality</a>
+    <div class="dropdown-content">
+      <a href="../demo_graphs/wekan-wekan-master_quality_full.html" onclick="return loadIframe(this.href);">Full REM Graph</a>
+      <a href="../demo_graphs/wekan-wekan-master_quality_min.html" onclick="return loadIframe(this.href);">Filtered REM Graph</a>
+    </div>
+  </li>
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Maintenance</a>
+    <div class="dropdown-content">
+      <a href="../demo_graphs/wekan-wekan-master_maintenance_full.html" onclick="return loadIframe(this.href);">Full REM Graph</a>
+      <a href="../demo_graphs/wekan-wekan-master_maintenance_min.html" onclick="return loadIframe(this.href);">Filtered REM Graph</a>
+    </div>
+  </li>
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Final</a>
+    <div class="dropdown-content">
+      <a href="../demo_graphs/wekan-wekan-master_final_full.html" onclick="return loadIframe(this.href);">Full REM Graph</a>
+      <a href="../demo_graphs/wekan-wekan-master_final_min.html" onclick="return loadIframe(this.href);">Filtered REM Graph</a>
+    </div>
+  </li>
+
+  <li style="float:right"><a class="active" href="https://github.com/wekan/wekan" target="_blank">Wekan/Wekan</a></li>
+</ul>
+
+<div class="graph-container">
+  <iframe id="graph-frame" src="../demo_graphs/wekan-wekan-master_final_full.html" class="graph" frameborder="0"></iframe>
+</div>
+
+</body>
+</html>
